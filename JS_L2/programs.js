@@ -191,10 +191,9 @@
 
 //---------------------------------FIRST NON REPEATING CHAR----------------------------------   
 // let str = 'aabbkknccdeeff'
-// let res = ''
 // for(let i=0; i<str.length; i++){
 //     let count=0
-//     for(let j=0; j<str.length-1; j++){
+//     for(let j=0; j<str.length; j++){
 //         if(str[i]==str[j]){
 //             count++
 //         }
@@ -206,3 +205,45 @@
 // }
 
 
+// ----------------------------------------------REVERSE WORDS AT PLACE--------------------------------------------------
+// let str = 'hello kaif'
+// let reverse = ''
+// let words = str.split(' ')
+// for (val of words) {
+//     for (let i = val.length-1; i >= 0; i--){
+//         reverse += val[i]
+        
+//     }
+//     reverse+=' '
+// }
+// console.log(reverse)
+
+
+//---------------------------------------EXTRACT PALINDROME------------------------------------------------------------
+
+// function isPalin(str) {
+//     var isPalin = false
+//     var reverse = ''
+//     for (let i = str.length - 1; i >= 0; i--){
+//         reverse += str[i]
+//     }
+//     if (reverse === str) {
+//         isPalin=true
+//     }
+
+//     if (isPalin) {
+//         return reverse
+//     }
+// }
+
+// let str = 'hellomadamrotator'
+// let longest = ''
+// for (let i = 0; i < str.length; i++){
+//     for (let j = i; j < str.length; j++){
+//         let sub = str.substring(i, j + 1);
+//         if (isPalin(sub) && sub.length > longest.length) {
+//             longest = sub
+//         }
+//     }
+// }
+// console.log(longest)
